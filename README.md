@@ -1,1 +1,18 @@
-# regex
+- Classe de caracteres predefinida `\d`, significa qualquer dígito.
+- Quantifiers que definem quantas vezes um caractere deve aparecer:
+  - `{1}` significa uma vez.
+  - `*` significa zero, uma ou mais vezes
+- `.` é um meta-char que significa qualquer char.
+- `\` pode-se escapar meta-chars, por exemplo `\.`.
+- Pode-se definir a classe de qualquer caractere com o `[A-Z]`.
+- Quantifiers `?, +, *` e `{n}`.
+- `\s` significa whitespace e é um atalho para `[\t\r\n\f]`.
+- `\w` significa word char e é uma atalho para `[A-Za-z0-9_]`.
+- `\b` é uma âncora que seleciona um word boundary, isso é o início ou fim da palavra.
+- `^` é uma âncora que seleciona o início da string alvo.
+- `$` é uma âncora que seleciona o fim do alvo.
+- Declara-se um grupo com `()`.
+- Um grupo é retornado na hora de executar, são úteis para selecionar uma parte do match.
+- Através do `?:`, dizemos que não queremos ver esse grupo na resposta.
+- Quantifiers são gananciosos por padrão e pode-se utilizar um `?` logo após o quantifier, deixando-o preguiçoso.
+- Back-references, uma referência para um texto já encontrado. Usa-se um `\` seguido pelo número do grupo, começando com 1.
